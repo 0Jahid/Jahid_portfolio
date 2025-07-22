@@ -1,0 +1,97 @@
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+@import "swiper/css/scrollbar";
+
+.swiper-portfolio {
+  padding-right: 250px;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-portfolio {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 0px;
+  }
+}
+
+#switcher,
+#showSwitcher {
+  transition: 1s all;
+}
+#switcher.open,
+#showSwitcher.open {
+  margin-left: 0;
+}
+#showSwitcher.close {
+  margin-left: -500px;
+}
+#switcher ul li {
+  margin: 0 15px 15px 0;
+}
+
+.back-btn {
+  z-index: 11111;
+  margin-left: 0px;
+  position: fixed;
+  right: 0;
+  top: 220px;
+  background: #444;
+  border-left: 0;
+  font-size: 18px;
+  display: block;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 4px;
+  padding: 10px 16px 10px 16px;
+  cursor: pointer;
+  left: 0;
+  right: initial;
+  border-right: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Profile Summary Styles */
+.profile-summary {
+  max-width: 100%;
+  padding: 0;
+}
+
+.profile-summary h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.profile-summary p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.85);
+  text-align: justify;
+}
+
+.profile-summary p:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .profile-summary {
+    padding: 0 15px;
+  }
+  
+  .profile-summary h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .profile-summary p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+}
+
+.back-btn i {
+  font-size: 25px;
+  color: #fff;
+}
