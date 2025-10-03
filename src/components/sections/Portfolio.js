@@ -85,6 +85,7 @@ const Portfolio = () => {
                 className="youtube-video"
                 src="https://i.ibb.co.com/Wpch1JcY/ride-Zo-fd.gif"
                 allowFullScreen=""
+                style={{ width: '100%', height: '100%', border: 'none', display: 'block' }}
               />
             </div>
           </div>
